@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px 30px;
+  background-color: rgb(69, 65, 56);
+
+  box-sizing:border-box;
+
+}
+
+.footer p, .footer a {
+  color: rgb(220, 216, 192);
+  display: block;
+  margin-bottom: 5px;
+}

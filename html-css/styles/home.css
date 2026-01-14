@@ -1,0 +1,174 @@
+.page-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.top-image-container {
+  position: relative;
+  display: flex;
+  z-index: -10;
+
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  box-shadow: 0 0 300px rgba(0,0,0,1) inset;
+
+  background: url('../assets/tkf3.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.image-container-blur {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+}
+.image-container-box {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 200px;
+  padding-left: 50px;
+
+}
+.title-header {
+  font-size: 70px;
+  font-weight: 200;
+  letter-spacing: 10px;
+  /* color: rgb(69, 65, 56); */
+  color: rgb(220, 216, 192);
+}
+.title-sub {
+  font-size: 60px;
+  font-weight: 600;
+  /* color: rgb(69, 65, 56); */
+  color: rgb(220, 216, 192);
+}
+.title-sep {
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 10px;
+  /* color: rgb(69, 65, 56); */
+  color: rgb(220, 216, 192);
+}
+
+@keyframes arrowAnimation {
+  0%   {bottom: 60px;}
+  50%  {bottom: 20px;}
+  100% {bottom: 60px;}
+}
+
+.arrow {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+  font-size: 80px;
+  color: rgb(220, 216, 192);
+
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+
+  animation-name: arrowAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+
+  width: 100%;
+  
+  /* source: https://metakirby5.github.io/yorha/? */
+  background-color: #d1cdb7;  
+  -webkit-background-size: 0.3rem 0.3rem;
+  -moz-background-size: 0.3rem 0.3rem;
+  background-size: 0.3rem 0.3rem;
+  background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+}
+
+.profile-section {
+  display: flex;
+
+  background-color: rgba(220, 216, 192);
+
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+  
+  width: 70%;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 5px;
+}
+.profile-header {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+.profile-picture {
+  max-height: 200px;
+
+  /* border-radius: 100px; */
+
+  margin-right: 20px;
+}
+
+.projects-link {
+  font-size: 20px;
+  text-decoration: none;
+
+  color: rgb(220, 216, 192);
+  background-color: rgb(69, 65, 56);
+
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  width: 60%;
+  /* max-width: 50%; */
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.project-container {
+  background-color: rgb(220, 216, 192);
+  border-radius: 5px;
+  padding: 10px 10px;
+
+  transition:
+    transform 0.15s,
+    background-color 0.15s;
+
+  cursor: pointer;
+}
+.project-container:hover {
+  transform: scale(1.03);
+  background-color: rgb(197, 193, 169);
+}
+.project-container:active {
+  transform: scale(1.02);
+  background-color: rgb(184, 180, 157);
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

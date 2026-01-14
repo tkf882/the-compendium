@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+
+  font-family: "Raleway", sans-serif;
+  /* background-color: white; */
+  background-color: rgb(220, 216, 192);
+
+  opacity: 0;
+  animation: fadeIn 0.7s forwards;
+
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+::selection {
+  /* background: rgb(237, 218, 175); */
+  background-color: #bab5a1;
+  /* color: rgb(75, 73, 72); */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(69, 65, 56);
+  margin: 0px;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(69, 65, 56);
+  margin: 0px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(69, 65, 56);
+  margin: 0px;
+}
+p, li {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(100, 97, 90);
+  margin: 0px;
+}
