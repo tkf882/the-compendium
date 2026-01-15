@@ -1,0 +1,30 @@
+.project-container {
+  background-color: rgb(220, 216, 192);
+  border-radius: 5px;
+  padding: 10px 10px;
+
+  transition:
+    transform 0.15s,
+    background-color 0.15s;
+
+  cursor: pointer;
+}
+.project-container:hover {
+  transform: scale(1.03);
+  background-color: rgb(197, 193, 169);
+}
+.project-container:active {
+  transform: scale(1.02);
+  background-color: rgb(184, 180, 157);
+}
+
+.project-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold-span-h3 {
+  font-weight: 600;
+}

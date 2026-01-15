@@ -1,0 +1,26 @@
+.page-container-404 {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* source: https://metakirby5.github.io/yorha/? */
+  background-color: #d1cdb7;
+  -webkit-background-size: 0.3rem 0.3rem;
+  -moz-background-size: 0.3rem 0.3rem;
+  background-size: 0.3rem 0.3rem;
+  background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+} 
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-size: 30px;
+
+}

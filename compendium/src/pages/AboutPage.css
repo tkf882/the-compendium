@@ -1,0 +1,49 @@
+.page-container-about {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* source: https://metakirby5.github.io/yorha/? */
+  background-color: #d1cdb7;
+  -webkit-background-size: 0.3rem 0.3rem;
+  -moz-background-size: 0.3rem 0.3rem;
+  background-size: 0.3rem 0.3rem;
+  background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+}
+
+.content-container-about {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  box-sizing:border-box;
+  /* min-height: 100%; */
+  padding-top: 150px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.content-section-about {
+  background-color: rgb(220, 216, 192);
+
+  width: 70%;
+  margin: 20px;
+  padding: 20px;
+
+  border-radius: 5px;
+}
+.content-section-about h2, .content-section-about p {
+  margin-bottom: 10px;
+}
+.content-section-about a {
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.bold-span-p {
+  font-weight: 700;
+}

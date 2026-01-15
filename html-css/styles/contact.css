@@ -1,4 +1,4 @@
-.page-container {
+.page-container-contact {
   position: absolute;
   width: 100%;
   min-height: 100%;
@@ -15,7 +15,7 @@
   background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
 }
 
-.content-container {
+.content-container-contact {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -27,7 +27,7 @@
   padding-bottom: 20px;
 }
 
-.content-section {
+.content-section-contact-contact {
   background-color: rgb(220, 216, 192);
 
   width: 70%;
@@ -36,10 +36,10 @@
 
   border-radius: 5px;
 }
-.content-section h2, .content-section p {
+.content-section-contact h2, .content-section-contact p {
   margin-bottom: 10px;
 }
-.content-section a {
+.content-section-contact a {
   margin-bottom: 10px;
   text-decoration: underline;
 }

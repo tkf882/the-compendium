@@ -1,0 +1,20 @@
+.page-transition {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  background-color: rgb(220, 216, 192);
+
+  opacity: 1;
+  z-index: 30;
+  animation: fadeOut 0.5s forwards;
+  transition-delay: 0.5s; 
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    display: hidden;
+  }
+}

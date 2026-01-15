@@ -1,4 +1,4 @@
-.page-container {
+.page-container-about {
   position: absolute;
   width: 100%;
   min-height: 100%;
@@ -15,7 +15,7 @@
   background-image: -webkit-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -webkit-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
 }
 
-.content-container {
+.content-container-about {
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -28,7 +28,7 @@
   
 }
 
-.content-section {
+.content-section-about {
   background-color: rgb(220, 216, 192);
 
   width: 70%;
@@ -37,10 +37,10 @@
 
   border-radius: 5px;
 }
-.content-section h2, .content-section p {
+.content-section-about h2, .content-section-about p {
   margin-bottom: 10px;
 }
-.content-section a {
+.content-section-about a {
   margin-bottom: 10px;
   text-decoration: underline;
 }
