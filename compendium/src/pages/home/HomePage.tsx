@@ -1,5 +1,5 @@
 import { Header } from '../../components/Header'
-import { Sidebar } from '../../components/Sidebar'
+// import { Sidebar } from '../../components/Sidebar'
 import { Footer } from '../../components/Footer'
 // import { Fade } from '../../components/Fade'
 import { Shuffle } from '../../components/Shuffle';
@@ -29,7 +29,7 @@ export function HomePage() {
 
         <Header selected={{name: 'home'}}/>
 
-        <Sidebar />
+        {/* <Sidebar /> */}
         
         <div className="top-image-container">
           <div className="image-container-blur">

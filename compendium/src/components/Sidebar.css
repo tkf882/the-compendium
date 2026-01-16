@@ -12,7 +12,7 @@
 
 .sidebar {
   position: fixed;
-  z-index: -20;
+  z-index: 20;
   top: 20px;
   right: 20px;
   bottom: 20px;
@@ -33,6 +33,23 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0 , 0.2);
 
   border-radius: 5px;
+  
+  opacity: 0;
+  
+  
+  transition: opacity 0.2s linear 0s;
+  /* transition: visibility 0s linear 0.2s; */
+}
+
+.sidebar-open {
+  opacity: 1;
+  visibility: visible;
+  /* visibility: visible; */
+}
+
+.sidebar-closed {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* update sidebar like this in react using state */

@@ -1,5 +1,5 @@
 import { Header } from '../components/Header'
-import { Sidebar } from '../components/Sidebar'
+// import { Sidebar } from '../components/Sidebar'
 import { Footer } from '../components/Footer'
 // import { Fade } from '../components/Fade'
 
@@ -26,7 +26,7 @@ export function NotFoundPage() {
 
         <Header selected={{name: ''}}/>
 
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         <div className="not-found-container">
           <h2>404: Page not found.</h2>

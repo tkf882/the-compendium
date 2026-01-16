@@ -1,5 +1,5 @@
 import { Header } from '../components/Header'
-import { Sidebar } from '../components/Sidebar'
+// import { Sidebar } from '../components/Sidebar'
 import { Footer } from '../components/Footer'
 // import { Fade } from '../components/Fade'
 
@@ -28,7 +28,7 @@ export function AboutPage() {
 
         <Header selected={{name:'about'}}/>
 
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         <div className="content-container-about">
 
