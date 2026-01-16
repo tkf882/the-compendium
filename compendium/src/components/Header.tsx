@@ -31,7 +31,7 @@ export function Header({selected}:headerProps) {
             <Link to="/about" className="header-right-nav-link">About</Link>
           </div>
           <div className={`header-right-link-container${selected.name === 'contact' ? '-selected' : ''}`}>
-            <Link to="contact" className="header-right-nav-link">Contact</Link>
+            <Link to="/contact" className="header-right-nav-link">Contact</Link>
           </div>
         </div>
         <div className="header-right-container-icons">

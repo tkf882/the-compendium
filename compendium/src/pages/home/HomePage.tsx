@@ -2,6 +2,7 @@ import { Header } from '../../components/Header'
 import { Sidebar } from '../../components/Sidebar'
 import { Footer } from '../../components/Footer'
 // import { Fade } from '../../components/Fade'
+import { Shuffle } from '../../components/Shuffle';
 import { HomeProjectPreview } from './HomeProjectPreview';
 
 import './HomePage.css'
@@ -33,9 +34,12 @@ export function HomePage() {
         <div className="top-image-container">
           <div className="image-container-blur">
             <div className="image-container-box">
-              <p className="title-header">TREVOR FAVEL'S</p>
-              <p className="title-sub">compendium_</p>
-              <p className="title-sep">/////////////////////////////////////////////////////</p>
+              {/* <p className="title-header">TREVOR FAVEL'S</p> */}
+              <Shuffle details={{finalString: "TREVOR FAVEL'S", class: 'title-header', underscore: false}} />
+              {/* <p className="title-sub">compendium_</p> */}
+              <Shuffle details={{finalString: 'compendium', class: 'title-sub', underscore: true}} />
+              {/* <p className="title-sep">/////////////////////////////////////////////////////</p> */}
+              <Shuffle details={{finalString: '/////////////////////////////////////////////////////', class: 'title-sep', underscore: false}} />
             </div>
           </div>
           <a className="arrow">{'>>'}</a>
