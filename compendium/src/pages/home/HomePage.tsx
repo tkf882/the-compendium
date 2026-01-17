@@ -1,7 +1,5 @@
 import { Header } from '../../components/Header'
-// import { Sidebar } from '../../components/Sidebar'
 import { Footer } from '../../components/Footer'
-// import { Fade } from '../../components/Fade'
 import { Shuffle } from '../../components/Shuffle';
 import { HomeProjectPreview } from './HomeProjectPreview';
 
@@ -25,20 +23,14 @@ export function HomePage() {
       <link rel="icon" type="image/svg+xml" href={pfp1} />
 
       <div className="page-container-home">
-        {/* <Fade /> */}
 
         <Header selected={{name: 'home'}}/>
-
-        {/* <Sidebar /> */}
         
         <div className="top-image-container">
           <div className="image-container-blur">
             <div className="image-container-box">
-              {/* <p className="title-header">TREVOR FAVEL'S</p> */}
               <Shuffle details={{finalString: "TREVOR FAVEL'S", class: 'title-header', underscore: false}} />
-              {/* <p className="title-sub">compendium_</p> */}
               <Shuffle details={{finalString: 'compendium', class: 'title-sub', underscore: true}} />
-              {/* <p className="title-sep">/////////////////////////////////////////////////////</p> */}
               <Shuffle details={{finalString: '/////////////////////////////////////////////////////', class: 'title-sep', underscore: false}} />
             </div>
           </div>

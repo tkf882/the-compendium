@@ -11,7 +11,7 @@ export function Footer() {
         <Link to="/about">about</Link>
         <Link to="/contact">contact</Link>
       </div>
-      <p>yeah</p>
+      <p>compendium_</p>
     </div>
   )
 }

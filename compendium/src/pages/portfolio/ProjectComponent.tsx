@@ -10,6 +10,7 @@ export function ProjectComponent({project, setCurrentProject}: projectComponentP
 
   const updateInfo:()=>void = () => {
     setCurrentProject(project)
+    // console.log(`updated to ${project.id}`)
   }
 
   return (

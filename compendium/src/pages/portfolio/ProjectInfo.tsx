@@ -3,20 +3,12 @@ import './ProjectInfo.css';
 
 interface projectInfoProps {
   currentProject: Project;
+  // projectId: (string | null);
   // setCurrentProject: (value: Project) => void;
 }
 
 export function ProjectInfo({currentProject}: projectInfoProps) {
-
-  console.log(currentProject.projectTitle);
-
-  // const generateList = () => {
-  //   let html = '';
-  //   currentProject.points.forEach(function(value) {
-  //     html += `<li>${value}</li>`
-  //   })
-  //   return html;
-  // }
+  // console.log(currentProject.projectTitle);
 
   const placeholder = (
     <div className="project-info">
@@ -37,9 +29,10 @@ export function ProjectInfo({currentProject}: projectInfoProps) {
       <h2>{currentProject.projectSubtitle}</h2>
       <ul>
         {
-          currentProject.points.map((point) => {
+          currentProject.points.map((point, index) => {
             return (
-              <li>{point}</li>
+              // each point in the points array needs its own key, so just append the index to the id
+              <li key={`${currentProject.id}-${index}`}>{point}</li>
             )
           })
         }

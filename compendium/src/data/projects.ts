@@ -14,12 +14,14 @@ export class Project {
   projectSubtitle: string;
   date: string;
   points: string[];
+  id: (string | null);
 
-  constructor(projectTitle:string, projectSubtitle:string, date:string, points:string[]) {
+  constructor(projectTitle:string, projectSubtitle:string, date:string, points:string[], id:(string | null)) {
     this.projectTitle = projectTitle;
     this.projectSubtitle = projectSubtitle;
     this.date = date;
     this.points = points;
+    this.id = id;
   }
 
 }
@@ -33,7 +35,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '1'
   ),
   new Project(
     "title2",
@@ -43,7 +46,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '2'
   ),
   new Project(
     "title3",
@@ -53,7 +57,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '3'
   ),
   new Project(
     "title4",
@@ -63,7 +68,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '4'
   ),
   new Project(
     "title5",
@@ -73,7 +79,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '5'
   ),
   new Project(
     "title6",
@@ -83,7 +90,8 @@ const projects:Project[] = [
       "first",
       "second",
       "third"
-    ]
+    ],
+    '6'
   ),
 ]; 
 

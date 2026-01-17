@@ -6,7 +6,7 @@ import './HomeProjectPreview.css'
 
 export function HomeProjectPreview() {
 
-  console.log(projectList.projects[0])
+  // console.log(projectList.projects[0])
 
   return (
     <div className="project-grid-home">

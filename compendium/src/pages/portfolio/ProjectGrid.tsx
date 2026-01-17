@@ -10,39 +10,16 @@ interface projectGridProps {
 
 export function ProjectGrid({setCurrentProject}: projectGridProps) {
   return(
-    // <div className="project-grid">
-
-    //   <ProjectComponent />
-    //   <ProjectComponent />
-    //   <ProjectComponent />
-    //   <ProjectComponent />
-    //   <ProjectComponent />
-
-    // </div>
-
     <div className="project-grid">
       {projectList.projects.map((project) => {
         return (
           <ProjectComponent
+            key={project.id}
             project={project}
             setCurrentProject={setCurrentProject}
           />
         )
       })}
     </div>
-
-
-
-    // <div className="products-grid">
-    //   {products.map((product) => {
-      
-    //     return (
-    //       <Product key={product.id} product={product} loadCart={loadCart} />
-    //     );
-    //   })}
-
-    // </div>
-
-
   )
 }

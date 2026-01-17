@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { Project } from '../../data/projects';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router';
+import { Project, projectList } from '../../data/projects';
 
 import { ProjectInfo } from './ProjectInfo';
 import { ProjectGrid } from './ProjectGrid';
@@ -10,8 +11,20 @@ import './PortfolioPage.css'
 
 export function PortfolioPage() {
   // need the state for ProjectInfo and ProjectGrid
-  const [currentProject, setCurrentProject] = useState(new Project('','','',[]));
+  const [currentProject, setCurrentProject] = useState(new Project('','','',[],null));
+  const [params] = useSearchParams();
+  const projectId:(string | null) = params.get('projectId');
+  // console.log(projectId);
 
+  useEffect(() => {
+    if (projectId) {
+      for (let i = 0; i < projectList.projects.length; i++) {
+        if (projectList.projects[i].id === projectId) {
+          setCurrentProject(projectList.projects[i]);
+        }
+      }
+    }
+  }, [projectId])
 
   return (
     <>
@@ -36,7 +49,6 @@ export function PortfolioPage() {
 
           <ProjectInfo
             currentProject={currentProject}
-            // setCurrentProject={setCurrentProject}
           />
 
           <ProjectGrid 
