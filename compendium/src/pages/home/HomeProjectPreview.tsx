@@ -11,12 +11,12 @@ export function HomeProjectPreview() {
   return (
     <div className="project-grid-home">
 
-      <HomeProject />
-      <HomeProject />
-      <HomeProject />
-      <HomeProject />
-      <HomeProject />
-      <HomeProject />
+      <HomeProject props={{project: projectList.projects[0]}}/>
+      <HomeProject props={{project: projectList.projects[1]}}/>
+      <HomeProject props={{project: projectList.projects[2]}}/>
+      <HomeProject props={{project: projectList.projects[3]}}/>
+      <HomeProject props={{project: projectList.projects[4]}}/>
+      <HomeProject props={{project: projectList.projects[5]}}/>
 
     </div>
   )
