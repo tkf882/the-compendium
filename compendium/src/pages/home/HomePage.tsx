@@ -44,17 +44,17 @@ export function HomePage() {
               <div className="profile-header">
                 <div>
                   <h1>Trevor Favel</h1>
-                  <h2>Graduated from <span className="bold-span-h2">SIMON FRASER UNIVERSITY</span> with a degree in <span className="bold-span-h2">COMPUTER SCIENCE (DISTINCTION)</span></h2>
+                  <h2>Graduated from <span className="bold-span">SIMON FRASER UNIVERSITY</span> with a degree in <span className="bold-span">COMPUTER SCIENCE (DISTINCTION)</span></h2>
                 </div>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              {/* <span className="bold-span">sad</span> */}
+              <p>I am a programmer who enjoys working on people-oriented projects.</p>
+              <p>Many of my projects are in <span className="bold-span">Python</span>. I also have project experience in <span className="bold-span">C/C++,</span> <span className="bold-span">Java,</span> and using design tools (Photoshop, Premiere, Maya, Clip Studio).</p>
+              <p>My web tech stack includes <span className="bold-span">HTML/CSS,</span> <span className="bold-span">React/TypeScript,</span> and <span className="bold-span">Vite</span>.</p>
             </div>
           </div>
 
-          <h2>Project Highlights</h2>
+          <h2>Recent Projects</h2>
 
           <HomeProjectPreview />
 

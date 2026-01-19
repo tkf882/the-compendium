@@ -34,7 +34,7 @@ export function Shuffle({details}:shuffleProps) {
     let intervalId = 1;
 
     intervalId = setInterval(function() {
-      console.log('title shuffle') // make sure its properly being terminated
+      // console.log('title shuffle') // make sure its properly being terminated
       pointer += 1;
       setCurrentString(`${finalString.slice(0, pointer)}${randomString(length-pointer)}`);
       if (pointer > length) {
@@ -50,7 +50,7 @@ export function Shuffle({details}:shuffleProps) {
     let underscoreIntervalId = 1;
     if (details.underscore) {
       underscoreIntervalId = setInterval(function() {
-        console.log('underscore blink'); // make sure its properly being terminated
+        // console.log('underscore blink'); // make sure its properly being terminated
         // underscore === '_' ? setUnderscore('') : setUnderscore('_');
 
         if (underscore === '_') {

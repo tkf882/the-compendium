@@ -21,6 +21,7 @@ export function PortfolioPage() {
       for (let i = 0; i < projectList.projects.length; i++) {
         if (projectList.projects[i].id === projectId) {
           setCurrentProject(projectList.projects[i]);
+          break;
         }
       }
     }
