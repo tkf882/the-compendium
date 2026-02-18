@@ -10,6 +10,8 @@ interface projectInfoProps {
 export function ProjectInfo({currentProject}: projectInfoProps) {
   // console.log(currentProject.projectTitle);
 
+  const isLink:boolean = currentProject.projectSubtitle.substring(0,8) === 'https://'; // Test if its a https link
+
   const placeholder = (
     <div className="project-info">
       <div className="project-info-placeholder">
@@ -25,8 +27,7 @@ export function ProjectInfo({currentProject}: projectInfoProps) {
         <h1>{currentProject.projectTitle}</h1>
         <h2>{currentProject.date}</h2>
       </div>
-
-      <h2>{currentProject.projectSubtitle}</h2>
+      <h2>{isLink ? <a style={{textDecoration: 'underline'}} href={currentProject.projectSubtitle}>Page Link</a> : `${currentProject.projectSubtitle}`}</h2>
       <ul>
         {
           currentProject.points.map((point, index) => {

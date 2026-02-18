@@ -1,11 +1,11 @@
 // https://www.geeksforgeeks.org/javascript/how-to-create-a-guid-uuid-in-javascript/
 function uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
-    .replace(/[xy]/g, function (c) {
-        const r = Math.random() * 16 | 0, 
-            v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'
+  .replace(/[xy]/g, function (c) {
+      const r = Math.random() * 16 | 0, 
+          v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+  });
 }
 
 export class ProjectList {
@@ -37,6 +37,17 @@ export class Project {
 
 // Store like this for now
 const projects:Project[] = [
+  new Project(
+    "Yuzudoro: Pomodoro Productivity Timer",
+    "https://tkf882.github.io/yuzudoro/",
+    "Feb 2026",
+    [
+      "Designed and built a website (HTML, CSS, Typescript, React, Vite) that assists in and tracks the user’s time spent focusing using the Pomodoro timer technique.",
+      "Divided data types into a scheme that can be reliably scaled into a relational databse for backend use.",
+      "Iterated and prototyped design with users to integrate further functionality and increase user experience."
+    ],
+    uuidv4()
+  ),
   new Project(
     "The Compendium",
     "Portfolio Website",
