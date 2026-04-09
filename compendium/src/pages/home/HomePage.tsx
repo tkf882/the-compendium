@@ -38,23 +38,26 @@ export function HomePage() {
         </div>
 
         <div className="content-container-home">
-          <div className="profile-section">
-            <img className="profile-picture" src={pfp2}/>
-            <div>
-              <div className="profile-header">
-                <div>
-                  <h1>Trevor Favel</h1>
-                  <h2>Graduated from <span className="bold-span">SIMON FRASER UNIVERSITY</span> with a degree in <span className="bold-span">COMPUTER SCIENCE (DISTINCTION)</span></h2>
-                </div>
-              </div>
-              {/* <span className="bold-span">sad</span> */}
-              <p>I am a programmer who enjoys working on people-oriented projects.</p>
-              <p>Many of my projects are in <span className="bold-span">Python</span>. I also have project experience in <span className="bold-span">C/C++,</span> <span className="bold-span">Java,</span> and using design tools (Photoshop, Premiere, Maya, Clip Studio).</p>
-              <p>My web tech stack includes <span className="bold-span">HTML/CSS,</span> <span className="bold-span">React/TypeScript,</span> and <span className="bold-span">Vite</span>.</p>
-            </div>
+
+          <div className="profile-description">
+            <h1>Who am I?</h1>
+            <h2>My name is Trevor Favel, and I graduated from Simon Fraser University with a degree in Computer Science (Distinction) 3.6/4.0. I enjoy working on projects that are people-oriented with the goal of helping others in mind. See my projects for details!</h2>
           </div>
 
-          <h2>Recent Projects</h2>
+          <div className="profile-description-right">
+            <h1>What I do:</h1>
+            <h2>Programmer, Web Developer (Front-end, Back-end), Designer, Illustrator, </h2>
+          </div>
+
+          <div className="profile-description">
+            <h1>Tech stack and skills:</h1>
+            <h2><span className="bold-span">Languages: </span>Python, C/C++, Java, SQL, JavaScript, TypeScript, HTML, CSS</h2>
+            <h2><span className="bold-span">Frameworks/Libraries/Tools: </span>React.js, Node.js, Express.js, Vite</h2>
+            <h2><span className="bold-span">Developer Tools: </span>Linux (Bash, Debian-based), Git, GitHub, Visual Studio Code, Virtual Machines</h2> 
+            <h2><span className="bold-span">Design: </span>Illustration, Adobe Photoshop, Adobe Premiere Pro, Clip Studio, Maya</h2> 
+          </div>
+
+          <h1>Recent Projects</h1>
 
           <HomeProjectPreview />
 

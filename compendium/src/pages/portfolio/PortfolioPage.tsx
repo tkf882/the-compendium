@@ -11,7 +11,7 @@ import './PortfolioPage.css'
 
 export function PortfolioPage() {
   // need the state for ProjectInfo and ProjectGrid
-  const [currentProject, setCurrentProject] = useState(new Project('','','',[],null));
+  const [currentProject, setCurrentProject] = useState(new Project('','','','',[],null));
   const [params] = useSearchParams();
   const projectId:(string | null) = params.get('projectId');
   // console.log(projectId);

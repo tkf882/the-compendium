@@ -44,12 +44,14 @@ export function AboutPage() {
 
           <div className="content-section-about">
             <h2>Other</h2>
-            <p>Some other things about me.</p>
+            <p>Interests:</p>
             <ul>
-              <li>Linux (Debian) user</li>
-              <li>Illustrator and art connoisseur</li>
-              <li>Video game enjoyer</li>
-              <li>Book reader</li>
+              <li>Linux (Mint) user.</li>
+              <li>Illustrator and art connoisseur.</li>
+              <li>Jazz listener.</li>
+              <li>Video game enjoyer.</li>
+              <li>Book reader.</li>
+              <li>Biology</li>
             </ul>
         
           </div>

@@ -38,6 +38,7 @@ export function ProjectInfo({currentProject}: projectInfoProps) {
           })
         }
       </ul>
+      <p>{currentProject.projectDescription}</p>
     </div>
   )
 

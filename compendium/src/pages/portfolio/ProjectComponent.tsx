@@ -18,6 +18,7 @@ export function ProjectComponent({project, setCurrentProject}: projectComponentP
       <h2>{project.projectTitle}</h2>
       <div className="project-vignette"></div>
       <div className="project-date">{project.date}</div>
+      <p>{project.projectDescription}</p>
     </div>
   )
 }

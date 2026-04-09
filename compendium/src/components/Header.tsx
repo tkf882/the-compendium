@@ -69,7 +69,7 @@ export function Header({selected}:headerProps) {
           </button>
         </div>
         <a className="sidebar-link" href="https://github.com/tkf882/the-compendium">Repo link</a>
-        <a className="sidebar-link" href="https://www.sfu.ca/students/honour-rolls/deans-honour-roll.html">Dean's Honour Roll Fall 2025</a>
+        <a className="sidebar-link" href="https://www.sfu.ca/students/honour-rolls/deans-honour-roll/summer-2025.html">Dean's Honour Roll Summer 2025</a>
       </div>
       <div className="overlay"></div>
     </>

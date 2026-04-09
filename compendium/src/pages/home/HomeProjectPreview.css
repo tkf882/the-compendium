@@ -1,5 +1,11 @@
+.project-grid-home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .projects-link {
-  font-size: 20px;
+  font-size: 32px;
   text-decoration: none;
 
   color: rgb(220, 216, 192);
@@ -9,14 +15,21 @@
   margin-bottom: 20px;
 
   border-radius: 5px;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+.projects-link:hover {
+  filter: brightness(120%);
 }
 
 .project-grid-home {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 30px;
-  width: 60%;
+  /* width: 60%; */
   /* max-width: 50%; */
 
   margin-top: 30px;

@@ -36,7 +36,7 @@ export function ContactPage() {
 
           <div className="content-section-contact">
             <h2>Contact information</h2>
-            <p>N/A</p>
+            <p>Please refer to information found in Resume or Cover Letter.</p>
 
           </div>
 
