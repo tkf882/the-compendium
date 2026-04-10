@@ -6,7 +6,7 @@ import { HomeProjectPreview } from './HomeProjectPreview';
 import './HomePage.css'
 
 import pfp1 from '../../assets/tkf-pfp1.png';
-import pfp2 from '../../assets/tkf-pfp2.png';
+// import pfp2 from '../../assets/tkf-pfp2.png';
 
 
 export function HomePage() {
